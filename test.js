@@ -4,5 +4,5 @@ getInputValue(){
   var inputVal = document.getElementById("myInput").value;
 
   // Displaying the value
-  $( "#message2" ).html('  <div class="sulgeja"><a href="#" class="close">Sulge</a></div><p>Congratulations! You have completed the challenge.</p>');
+  document.getElementById("errorid").innerHTML = error;
 }
