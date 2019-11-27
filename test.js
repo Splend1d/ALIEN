@@ -4,5 +4,5 @@ getInputValue(){
   var inputVal = document.getElementById("myInput").value;
 
   // Displaying the value
-  document.getElementById("errorid").innerHTML = error;
+  document.getElementById("errorid").innerHTML = inputVal;
 }
