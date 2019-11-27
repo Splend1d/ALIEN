@@ -18,10 +18,17 @@ getResponse(){
   document.getElementById('shadow').value = inputVal;
   document.getElementById('myInput').value = '';
   document.getElementById("story").innerHTML += showtext;
+  autoScroll();
+
 }
 
 function
-getInput(){
+autoScroll() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
+function
+getInput() {
   document.getElementById('myInput').value = document.getElementById('shadow').value;
 
 }

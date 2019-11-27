@@ -14,9 +14,9 @@
         Do you want to see this again?
         <br>
       </p>
+      <div id = "inputField">
       <input type="text" placeholder="Your response" id="myInput">
       <button type="button" onclick="getResponse();" id = "myBtn">Send</button>
-      <button type="button" onclick="getInput();" id = "secBtn">Retrieve Last Input</button>
       <script>
         var input = document.getElementById("myInput");
         input.addEventListener("keyup", function(event) {
@@ -26,5 +26,8 @@
           }
         });
       </script>
+      <button type="button" onclick="getInput();" id = "secBtn">Retrieve Last Input</button>
+      </div>
+
     </body>
 </html>
