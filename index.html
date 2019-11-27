@@ -1,10 +1,30 @@
-<h1>Hello world </h1>
-<head>
-  <script src = "./tests.js">
-  </script>
-</head>
-<body>
-  <input type="text" placeholder="Type something..." id="myInput">
-  <button type="button" onclick="./tests.js/getInputValue();">Get Value</button>
-  <p id="errorid"></p>
-</body>
+<html>
+    <h1>ALIEN </h1>
+    <head>
+      <script src = "./util.js">
+
+      </script>
+    </head>
+    <body>
+      <div style="display:none">
+        <p id = "shadow">Dont show this
+        </p>
+      </div>
+      <p id="story">
+        Do you want to see this again?
+        <br>
+      </p>
+      <input type="text" placeholder="Your response" id="myInput">
+      <button type="button" onclick="getResponse();" id = "myBtn">Send</button>
+      <button type="button" onclick="getInput();" id = "secBtn">Retrieve Last Input</button>
+      <script>
+        var input = document.getElementById("myInput");
+        input.addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+           event.preventDefault();
+           document.getElementById("myBtn").click();
+          }
+        });
+      </script>
+    </body>
+</html>
